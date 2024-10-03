@@ -1,0 +1,12 @@
+{
+  "name": "jimcli",
+  "version": "0.0.1",
+  "description": "JIMCLI - Jacks Instalation Manager / Command Line Interface",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "jackatdjl",
+  "license": "MIT",
+  "packageManager": "yarn@1.22.22+sha1.ac34549e6aa8e7ead463a7407e1c7390f61a6610"
+}
