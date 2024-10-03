@@ -2,11 +2,50 @@
   "name": "jimcli",
   "version": "0.0.1",
   "description": "JIMCLI - Jacks Instalation Manager / Command Line Interface",
-  "main": "index.js",
+  "keywords": [
+    "jimcli",
+    "cli",
+    "jackatdjl",
+    "installation",
+    "yarn",
+    "npm",
+    "pnpm"
+  ],
+  "main": "dist/main.js",
+  "bin": {
+    "jim": "dist/main.js",
+    "jimmy": "dist/run.js"
+  },
+  "type": "module",
   "scripts": {
-    "test": "jest"
+    "compile": "echo \"┏━━ Compiling JIMCLI\" && run lint && run cleardist && run tsc && echo \"┗━━ Done\"",
+    "lint": "echo \"┣┳━ Running Lint\n┃┠─ run lint {options}\" && eslint src --max-warnings 2 --color --cache && echo \"┃┗━ Done\"",
+    "cleardist": "echo \"┣┳━ Running ClearDist\n┃┠─ run rimraf dist\" && rimraf dist && echo \"┃┗━ Done\"",
+    "tsc": "echo \"┣┳━ Running Typescript Compiler\n┃┠─ run tsc --build\" && tsc --build && echo \"┃┗━ Done\"",
+    "watch": "echo \"┣┳━ Monitoring JIM\n┃┠─ tsc --watch\" && tsc --watch && echo \"┃┗━ Done \"",
+    "dev": "echo \"┏━━ Running Dev\" && run watch && echo \"┗━━ Done\""
   },
   "author": "jackatdjl",
   "license": "MIT",
-  "packageManager": "yarn@1.22.22+sha1.ac34549e6aa8e7ead463a7407e1c7390f61a6610"
+  "packageManager": "yarn@4.5.0",
+  "devDependencies": {
+    "@eslint/eslintrc": "^3.1.0",
+    "@eslint/js": "^9.11.1",
+    "@types/chalk-animation": "^1.6.3",
+    "@types/figlet": "^1",
+    "@types/node": "^22.7.4",
+    "@typescript-eslint/parser": "^8.8.0",
+    "eslint": "^9.11.1",
+    "eslint-plugin-only-warn": "^1.1.0",
+    "prettier": "^3.3.3",
+    "rimraf": "^6.0.1",
+    "typescript": "5.6"
+  },
+  "dependencies": {
+    "chalk": "^5.3.0",
+    "chalk-animation": "^2.0.3",
+    "figlet": "^1.7.0",
+    "gradient-string": "^3.0.0",
+    "ora": "^8.1.0"
+  }
 }
