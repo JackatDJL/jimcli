@@ -102,11 +102,11 @@ __metadata:
   linkType: hard
 
 "@eslint/plugin-kit@npm:^0.2.0":
-  version: 0.2.0
-  resolution: "@eslint/plugin-kit@npm:0.2.0"
+  version: 0.2.3
+  resolution: "@eslint/plugin-kit@npm:0.2.3"
   dependencies:
     levn: "npm:^0.4.1"
-  checksum: 10c3/1cd84fe6428303c8c2aad719caf920ef2a15aeeba9fe470ada514a541ecbb9845158d86e8c8399c02bd376d362b135eafe017277de9c3f2a1e38f9941f0794c1
+  checksum: 10c3/e4e37fbf7ef162d1cfebefdae0530833d8f98fa0e39cbba494cec530f1b8a155c47f42089445e6213e84e44cd1e1c9d4510b93683b64bba799470ffc397aa282
   languageName: node
   linkType: hard
 
